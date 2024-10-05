@@ -1,0 +1,33 @@
+header .region_header {
+    background-color: aqua;
+    max-width: 1122px;
+    box-sizing: border-box;
+    justify-content: flex-end;
+}
+.region_header{
+    max-width: 100%fit-content            /* Ancho de la caja */
+    background-color: #f0f0f0; /* Color de fondo */
+    width: 100%;
+}
+.main_menu{
+    max-width: 1122px;             /* Ancho de la caja */
+    padding: 2px;           /* Espacio interno */
+    margin: 20px ;      /* Espaciado externo y centrado */
+    background-color: #dfcbcb; /* Color de fondo */
+    border: 2px solid #ccc;  /* Borde */
+    border-radius: 10px;     /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    display: inline-flex;
+}
+.main_menu .blocke_menu_left{
+    background: red;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+.main_menu .blocke_menu_right{
+    width: 50%;
+    padding: 10px;
+    justify-content: flex-end;
+    display: inline-block;
+}
