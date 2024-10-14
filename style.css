@@ -1,52 +1,57 @@
+* {
+    /*margin:0;
+    padding:0;*/
+    box-sizing: border-box;
+    list-style: none;
+    
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+
+    border-bottom: 2px solid black; /* Línea en la parte inferior */
+}
+
 /* DISEÑO Y PROGRAMACION PARA EL MENU HEADER, PRINCIPAL */
+
 .main_menu{
     display: flex;
     box-sizing: border-box;
-    padding: 10px;
-    margin: 8px 6% 8px 6%;      /* Espaciado externo y centrado */
-}
-/*
-    /*margin: 200px;*/
-    /*max-width: 1122px;             /* Ancho de la caja */
-    /*width: 1200px;*/
-    /*height: auto;*/
-    /*padding: 10px;          /* Espacio interno */
     /*margin: 8px 6% 8px 6%;      /* Espaciado externo y centrado */
-    /*background-color: #dfcbcb; /* Color de fondo */
-    /*border: 2px solid #beb9b9;  /* Borde */
-    /*border-radius: 10px;     /* Bordes redondeados */
-    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra
+    border-bottom: 2px solid black; /* Línea en la parte inferior */
+    
 }
-*/
 
 .main_menu .blocke_menu_left{
     margin: 2px;
     display: flex;
     box-sizing: border-box;
     width: 50%;
-    padding: 10px;
     /*background-color: #b5a0dd; /* Color de fondo */
     justify-content: flex-start;
+    align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font: size 1rem;
+    /*font: size 1rem;
     font-weight: 400;
     line-height: 1.5;
-    font:110% sans-serif;
+    font:110% sans-serif;*/
 }
 .main_menu .blocke_menu_right{
     display: flex;
     box-sizing: border-box;
     margin: 2px;
     width: 50%;
-    padding: 10px;
-    /*background-color: #b5a0dd; /* Color de fondo */
-    justify-content: flex-end;
+    justify-content:flex-end;
+    align-items: center;
 }
 
 .main_menu .blocke_menu_left .Menu-MyR{
     display: flex;
     box-sizing: border-box;
-    justify-content:space-evenly;
+    font-size: 30px ; /* Tamaño de la fuente */
     display:grid;
     display: grid;
             grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual ancho */
@@ -54,14 +59,16 @@
 }
 
 .main_menu .blocke_menu_right .Menu-Lo-Ing-reg{
-     display: flex;
-     box-sizing: border-box;
-     justify-content:space-evenly;
+    display: flex;
+    box-sizing: border-box;
+    justify-content:space-between;
+    align-items: center;
+    font-size: 35px ; /* Tamaño de la fuente */
 }
 
 .main_menu .blocke_menu_right .imgubica {
-    width: 8%;
-    height: auto;
+    width: 15%; /* O un valor específico, como '300px' */
+    height: auto; /* Mantiene la proporción de la imagen */
     display: flex;
     box-sizing: border-box;
     justify-content: flex-end;
@@ -70,11 +77,11 @@
 .Menu-Registrate {
     display: inline-block; /* Permite ajustar dimensiones */
     padding: 2px 13px; /* Espaciado interno */
-    font-size: 16px; /* Tamaño de la fuente */
+    font-size: 35px; /* Tamaño de la fuente */
     color: white; /* Color del texto */
     background-color: #0b0c0c; /* Color de fondo */
     border: none; /* Sin borde */
-    border-radius: 9px; /* Bordes redondeados */
+    border-radius: 11px; /* Bordes redondeados */
     text-decoration: none; /* Sin subrayado */
     text-align: center; /* Centrar texto */
     transition: background-color 0.3s; /* Efecto al pasar el ratón */
@@ -83,11 +90,11 @@
 .Menu-Ingresar {
     display:inline-flexbox; /* Permite ajustar dimensiones */
     padding: 2px 13px; /* Espaciado interno */
-    font-size: 16px ; /* Tamaño de la fuente */
+    font-size: 35px ; /* Tamaño de la fuente */
     color: rgb(8, 8, 8); /* Color del texto */
     background-color: #f6fafa; /* Color de fondo */
     border: black solid 3px; /* Sin borde */
-    border-radius: 9px; /* Bordes redondeados */
+    border-radius: 11px; /* Bordes redondeados */
     text-decoration: none; /* Sin subrayado */
     text-align: center; /* Centrar texto */
     transition: background-color 0.4s; /* Efecto al pasar el ratón */
@@ -96,6 +103,13 @@
 /* TOTAL SECCION PARA REVISAR LOS MARGENES DE COSTADO */
 body {
     margin:0% 15% 0% 15%;
+    
+}
+
+.region_header .main_menu img {
+
+    width: 4%; /* O un valor específico, como '300px' */
+    height: auto; /* Mantiene la proporción de la imagen */
 }
 
 /* TERMINA DISEÑO PARA TODO EL HEADER , PRINCIPAL */ 
@@ -111,68 +125,48 @@ body {
 
 .totalseccion .Main-content .bloqueUNO {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 3 columnas en pantallas grandes */
-    grid-template-rows: auto; 
-    /*gap: 10px;*/
-    margin-bottom: 20px;
-
-    /*display: flex; 
-    box-sizing: border-box;
-    flex-direction:row;
-    flex-wrap: wrap;
-    height: auto;
-    /*padding: 4px;
-    margin: 2px 0% 2% 0% ;*/
-    background-color:#1e3932;
-    /*justify-content: space-between;*/
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
+    gap: 10px; /* Espacio entre columnas */
+    /*display: flex;
+    flex-direction: row; /* Elementos en fila */
+    /*justify-content: space-between; /* Espacio entre elementos */
+    /*align-items: center; /* Alineación vertical */
+    background-color:#c9339c;
+ 
 }
-
-/* IMAGEN DE BLOQUE 1 */
-.totalseccion .Main-content .bloqueUNO .ImagenBloqueUNO{
-    width: 700px;
-    height: 408.628px;
-    /*height: auto;*/
-    display: flex;
-    box-sizing: border-box;
+/*  */
+.totalseccion .Main-content .bloqueUNO .Imagen-B1 img {
+    width: auto; /* Ajusta la imagen al contenedor */
+    height: auto; /* Mantiene la proporción */
     background-color: #1e3932;
 }
+
+
 /* CONTENEDOR DE BLOQUE DEL TEXTO BLOQUE UNO GENERAL */
-.totalseccion .Main-content .bloqueUNO .textBloqueUNO {
+.totalseccion .Main-content .bloqueUNO .Text_MainB1 {
     display: flex;
-    box-sizing: border-box;
-    width: 700px;
-    height: 408.628px;
-    padding: 32px 16px 32px 16px;
-    /*margin: 2px 0% 2% 0%; */
-    background: #1e3932;
-    flex-direction:column;
-    justify-content:center;   
+    flex-direction: column;
+    padding: 150px;
+    background-color: #61ac98;
+
 }
 
-.totalseccion .Main-content .bloqueUNO .textBloqueUNO .ENCABEZADO-TEXTO1 {
-    display: flex;
-    box-sizing: border-box;
-    /*width: 150px;*/
+.totalseccion .Main-content .bloqueUNO .Text_MainB1 .ENCABEZADO-TEXTO1 {
     color: #f6fafa;
     font: 150% white; 
     background-color: #1e3932;
-    justify-content: center;
-
+    text-align: center;
+    font-size: 1.875rem;
+  
 }
 
-.totalseccion .Main-content .bloqueUNO .textBloqueUNO .TextUNOCuerpo {
-    display: block;
-    box-sizing: border-box;
-    padding: 05%;
-    margin: 24px;
+.totalseccion .Main-content .bloqueUNO .Text_MainB1 .TextUNOCuerpo {
+    margin: 15px;
     text-align: center;
+    font-size: 1.8rem;
     color: #f6fafa;
-    font: 117% white; */
-    background-color: rgb(174, 0, 255);
-    justify-content:center;
-    display:grid;
-    grid-template-rows: auto auto;
-    align-items:
+    font-family: Arial, sans-serif;
+    background-color:#3ca5d6;
 }
 
 /* SEGUNDO BLOQUE PUBLICITARIO */
@@ -187,7 +181,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 3 columnas en pantallas grandes */
     grid-template-rows: auto; 
-    /*gap: 10px;*/
+    gap: 10px;
     margin-bottom: 20px;
 
     /*display: flex; 
@@ -203,9 +197,8 @@ body {
 
 /* IMAGEN DE BLOQUE 1 */
 .totalseccion .Main-content .bloqueDOS .ImagenBloqueDOS{
-    width: 700px;
-    height: 408.628px;
-    /*height: auto;*/
+    width: auto;
+    height: auto;
     display: flex;
     box-sizing: border-box;
     background-color: #1e3932;
@@ -214,8 +207,8 @@ body {
 .totalseccion .Main-content .bloqueDOS .textBloqueDOS {
     display: flex;
     box-sizing: border-box;
-    width: 700px;
-    height: 408.628px;
+    width: auto;
+    height: auto;
     padding: 32px 16px 32px 16px;
     /*margin: 2px 0% 2% 0%; */
     background: #1e3932;
@@ -226,9 +219,10 @@ body {
 .totalseccion .Main-content .bloqueDOS .textBloqueDOS .ENCABEZADO-TEXTO2 {
     display: flex;
     box-sizing: border-box;
-    /*width: 150px;*/
     color: #f6fafa;
-    font: 150% white; 
+    background-color: #1e3932;
+    text-align: center;
+    font-size: 2.875rem;
     background-color: #1e3932;
     justify-content: center;
 
@@ -237,12 +231,12 @@ body {
 .totalseccion .Main-content .bloqueDOS .textBloqueDOS .TextDOSCuerpo {
     display: block;
     box-sizing: border-box;
-    padding: 05%;
-    margin: 24px;
+    margin: 60px;
     text-align: center;
+    font-size: 1.8rem;
     color: #f6fafa;
-    font: 117% white; */
-    background-color: rgb(174, 0, 255);
+    font-family: Arial, sans-serif;
+    background-color:#1e3932;
     justify-content:center;
     display:grid;
     grid-template-rows: auto auto;
@@ -259,22 +253,13 @@ body {
     grid-template-rows: auto; 
     /*gap: 10px;*/
     margin-bottom: 20px;
-
-    /*display: flex; 
-    box-sizing: border-box;
-    flex-direction:row;
-    flex-wrap: wrap;
-    height: auto;
-    /*padding: 4px;
-    margin: 2px 0% 2% 0% ;*/
     background-color:#fac3a7;
-    /*justify-content: space-between;*/
 }
 
 /* IMAGEN DE BLOQUE 3 */
 .totalseccion .Main-content .bloqueTRES .ImagenBloqueTRES{
-    width: 700px;
-    height: 408.628px;
+    width: auto;
+    height: auto;
     /*height: auto;*/
     display: flex;
     box-sizing: border-box;
@@ -284,10 +269,9 @@ body {
 .totalseccion .Main-content .bloqueTRES .textBloqueTRES {
     display: flex;
     box-sizing: border-box;
-    width: 700px;
-    height: 408.628px;
+    width: auto;
+    height: auto;
     padding: 32px 16px 32px 16px;
-    /*margin: 2px 0% 2% 0%; */
     background: #fac3a7;
     flex-direction:column;
     justify-content:center;   
@@ -296,24 +280,24 @@ body {
 .totalseccion .Main-content .bloqueTRES .textBloqueTRES .ENCABEZADO-TEXTO3 {
     display: flex;
     box-sizing: border-box;
-    /*width: 150px;*/
     color: black;
-    font: 160% white; 
+    text-align: center;
+    font-size: 2.875rem;
     font-weight: bold;
     background-color: #fac3a7;
-    justify-content: center;
-    align-items: last baseline;
+    flex-direction: column-reverse;
+    justify-content:center;
+   
 
 }
 
 .totalseccion .Main-content .bloqueTRES .textBloqueTRES .TextTRESCuerpo {
     display: block;
     box-sizing: border-box;
-    padding: 05%;
-    margin: 24px;
+    margin: 60px;
     text-align: center;
+    font-size: 2.2rem;
     color: black;
-    font: 125% white; 
     background-color: #fac3a7;
     justify-content:center;
     display:grid;
@@ -330,24 +314,14 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 3 columnas en pantallas grandes */
     grid-template-rows: auto; 
-    /*gap: 10px;*/
     margin-bottom: 20px;
-
-    /*display: flex; 
-    box-sizing: border-box;
-    flex-direction:row;
-    flex-wrap: wrap;
-    height: auto;
-    /*padding: 4px;
-    margin: 2px 0% 2% 0% ;*/
     background-color:#1e3932;
-    /*justify-content: space-between;*/
 }
 
 /* IMAGEN DE BLOQUE 3 */
 .totalseccion .Main-content .bloqueCUATRO .ImagenBloqueCUATRO{
-    width: 700px;
-    height: 408.628px;
+    width: auto;
+    height: auto;
     /*height: auto;*/
     display: flex;
     box-sizing: border-box;
@@ -355,11 +329,12 @@ body {
 }
 /* CONTENEDOR DE BLOQUE DEL TEXTO BLOQUE UNO GENERAL */
 .totalseccion .Main-content .bloqueCUATRO .textBloqueCUATRO {
-    display: flex;
+    display:flex;
     box-sizing: border-box;
-    width: 700px;
-    height: 408.628px;
-    padding: 32px 16px 32px 16px;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    /*padding: 32px 16px 32px 16px;
     /*margin: 2px 0% 2% 0%; */
     background: #1e3932;
     flex-direction:column;
@@ -371,22 +346,24 @@ body {
     box-sizing: border-box;
     /*width: 150px;*/
     color: white;
-    font: 160% white; 
+    text-align: center;
+    font-size: 2.875rem;
     font-weight: bold;
     background-color: #1e3932;
-    justify-content: center;
-    align-items: last baseline;
+    flex-direction: row;
+    justify-content: space-around;
+   
 
 }
 
 .totalseccion .Main-content .bloqueCUATRO .textBloqueCUATRO .TextCUATROCuerpo {
     display: block;
     box-sizing: border-box;
-    padding: 05%;
-    margin: 24px;
+    margin: 60px;
     text-align: center;
-    color: white;
-    font: 125% white; 
+    font-size: 1.8rem;
+    color: #f6fafa;
+    font-family: Arial, sans-serif;
     background-color: #1e3932;
     justify-content:center;
     display:grid;
@@ -397,16 +374,20 @@ body {
 /*** boton de mas informacion EN EL BLOQUE 4 */
 
 .Mas_Informa {
+    position: relative;
     display:inline-flexbox; /* Permite ajustar dimensiones */
     padding: 2px 13px; /* Espaciado interno */
-    font-size: 16px ; /* Tamaño de la fuente */
+    font-size: 35px ; /* Tamaño de la fuente */
+    width: 30%;
+    height: 100%;
+    justify-content: space-evenly;
     color: white; /* Color del texto */
     background-color: #1e3932; /* Color de fondo */
-    border:white solid 3px; /* Sin borde */
-    border-radius: 9px; /* Bordes redondeados */
+    border: white solid 3px; /* Sin borde */
+    border-radius: 11px; /* Bordes redondeados */
     text-decoration: none; /* Sin subrayado */
-    text-align:center; /* Centrar texto */
-    transition: background-color 0.4s; /* Efecto al pasar el ratón */
+    text-align: center; /* Centrar texto */
+    transition: background-color 0.4s ease; /* Efecto al pasar el ratón */
 }
 
 /************************************************************/
@@ -417,25 +398,14 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 3 columnas en pantallas grandes */
     grid-template-rows: auto; 
-    /*gap: 10px;*/
     margin-bottom: 20px;
-
-    /*display: flex; 
-    box-sizing: border-box;
-    flex-direction:row;
-    flex-wrap: wrap;
-    height: auto;
-    /*padding: 4px;
-    margin: 2px 0% 2% 0% ;*/
     background-color: #df9c37;
-    /*justify-content: space-between;*/
 }
 
 /* IMAGEN DE BLOQUE 3 */
 .totalseccion .Main-content .bloqueCINCO .ImagenBloqueCINCO{
-    width: 700px;
-    height: 408.628px;
-    /*height: auto;*/
+    width: auto;
+    height: auto;
     display: flex;
     box-sizing: border-box;
     background-color: #df9c37;
@@ -444,10 +414,9 @@ body {
 .totalseccion .Main-content .bloqueCINCO .textBloqueCINCO {
     display: flex;
     box-sizing: border-box;
-    width: 700px;
-    height: 408.628px;
+    width: auto;
+    height: auto;
     padding: 32px 16px 32px 16px;
-    /*margin: 2px 0% 2% 0%; */
     background: #df9c37;
     flex-direction:column;
     justify-content:center;   
@@ -456,9 +425,9 @@ body {
 .totalseccion .Main-content .bloqueCINCO .textBloqueCINCO .ENCABEZADO-TEXTO5{
     display: flex;
     box-sizing: border-box;
-    /*width: 150px;*/
+    text-align: center;
+    font-size: 2.875rem;
     color: white;
-    font: 160% white; 
     font-weight: bold;
     background-color: #df9c37;
     justify-content: center;
@@ -469,11 +438,10 @@ body {
 .totalseccion .Main-content .bloqueCINCO .textBloqueCINCO .TextCINCOCuerpo {
     display: block;
     box-sizing: border-box;
-    padding: 05%;
-    margin: 24px;
     text-align: center;
-    color: white;
-    font: 125% white; 
+    font-size: 1.86rem;
+    color: #f6fafa;
+    font-family: Arial, sans-serif;
     background-color:#df9c37;
     justify-content:center;
     display:grid;
@@ -490,64 +458,51 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 3 columnas en pantallas grandes */
     grid-template-rows: auto; 
-    /*gap: 10px;*/
     margin-bottom: 20px;
-
-    /*display: flex; 
-    box-sizing: border-box;
-    flex-direction:row;
-    flex-wrap: wrap;
-    height: auto;
-    /*padding: 4px;
-    margin: 2px 0% 2% 0% ;*/
-    background-color: #df9c37;
-    /*justify-content: space-between;*/
+    background-color: #3ca5d6;
 }
 
 /* IMAGEN DE BLOQUE 3 */
 .totalseccion .Main-content .bloqueSEXTO .ImagenBloqueSEXTO{
-    width: 700px;
-    height: 408.628px;
+    width: auto;
+    height: auto;
     /*height: auto;*/
     display: flex;
     box-sizing: border-box;
-    background-color: #df9c37;
+    background-color: #3ca5d6;
 }
 /* CONTENEDOR DE BLOQUE DEL TEXTO BLOQUE UNO GENERAL */
-.totalseccion .Main-content .bloqueCINCO .textBloqueCINCO {
+.totalseccion .Main-content .bloqueSEXTO .textBloqueSEIS {
     display: flex;
     box-sizing: border-box;
-    width: 700px;
-    height: 408.628px;
-    padding: 32px 16px 32px 16px;
-    /*margin: 2px 0% 2% 0%; */
-    background: #df9c37;
+    width: auto;
+    height: auto;
+    background: #3ca5d6;
     flex-direction:column;
     justify-content:center;   
 }
 
-.totalseccion .Main-content .bloqueCINCO .textBloqueCINCO .ENCABEZADO-TEXTO5{
+.totalseccion .Main-content .bloqueSEXTO .textBloqueSEIS .ENCABEZADO-TEXTO6{
     display: flex;
     box-sizing: border-box;
-    /*width: 150px;*/
+    text-align: center;
+    font-size: 3.2rem;
     color: white;
-    font: 160% white; 
     font-weight: bold;
-    background-color: #df9c37;
+    background-color:#3ca5d6;
     justify-content: center;
     align-items: last baseline;
 
 }
 
-.totalseccion .Main-content .bloqueCINCO .textBloqueCINCO .TextCINCOCuerpo {
+.totalseccion .Main-content .bloqueSEXTO .textBloqueSEIS .TextSEXTOCuerpo {
     display: block;
     box-sizing: border-box;
-    padding: 05%;
-    margin: 24px;
     text-align: center;
-    color: white;
-    font: 125% white; 
-    background-color:#df9c37;
+    font-size: 2.25rem;
+    color: #f6fafa;
+    font-family: Arial, sans-serif;
+    background-color:#3ca5d6;
     justify-content:center;
     display:grid;
     grid-template-rows: auto auto;
@@ -555,4 +510,347 @@ body {
 }
 
 
+/************************************************************/
+/****   INICIO DE BLOQUE CIETE                               **/
+/************************************************************/
 
+.totalseccion .Main-content .bloqueSEPTIMO {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 columnas en pantallas grandes */
+    grid-template-rows: auto; 
+    margin-bottom: 20px;
+    background-color:#1e3932;
+}
+
+/* IMAGEN DE BLOQUE 1 */
+.totalseccion .Main-content .bloqueSEPTIMO .ImagenBloqueSEPTIMO{
+    width: auto;
+    height: auto;
+    /*height: auto;*/
+    display: flex;
+    box-sizing: border-box;
+    background-color: #1e3932;
+}
+/* CONTENEDOR DE BLOQUE DEL TEXTO BLOQUE UNO GENERAL */
+.totalseccion .Main-content .bloqueSEPTIMO .textBloqueSEPTIMO {
+    display: flex;
+    box-sizing: border-box;
+    width: auto;
+    height: auto;
+    background: #1e3932;
+    flex-direction:column;
+    justify-content:center;   
+}
+
+.totalseccion .Main-content .bloqueSEPTIMO .textBloqueSEPTIMO .ENCABEZADO-TEXTO7 {
+    display: flex;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 3.2rem;
+    color: white;
+    font-weight: bold;
+    background-color: #1e3932;
+    justify-content: center;
+
+}
+
+.totalseccion .Main-content .bloqueSEPTIMO .textBloqueSEPTIMO .TextSEPTIMOCuerpo {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 2.25rem;
+    color: #f6fafa;
+    font-family: Arial, sans-serif;
+
+    background-color: #1e3932;
+    justify-content:center;
+    display:grid;
+    grid-template-rows: auto auto;
+    align-items:
+}
+
+
+/*** boton de mas informacion EN EL BLOQUE 7 */
+
+.DescargaApp {
+    position: relative;
+    display:inline-flexbox; /* Permite ajustar dimensiones */
+    padding: 2px 13px; /* Espaciado interno */
+    font-size: 35px ; /* Tamaño de la fuente */
+    width: 50%;
+    height: 100%;
+    justify-content: space-evenly;
+    color: white; /* Color del texto */
+    background-color: #1e3932; /* Color de fondo */
+    border: white solid 3px; /* Sin borde */
+    border-radius: 11px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    text-align: center; /* Centrar texto */
+    transition: background-color 0.4s ease /* Efecto al pasar el ratón */
+}
+
+/************************************************************/
+/****   INICIO DE BLOQUE CIETE                               **/
+/************************************************************/
+
+.totalseccion .Main-content .bloqueOCTAVO {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 columnas en pantallas grandes */
+    grid-template-rows: auto; 
+    margin-bottom: 20px;
+    background-color: #034153;
+}
+
+/* IMAGEN DE BLOQUE 1 */
+.totalseccion .Main-content .bloqueOCTAVO .ImagenBloqueOCTAVO {
+    width: auto;
+    height: auto;
+    /*height: auto;*/
+    display: flex;
+    box-sizing: border-box;
+    background-color: #034153;
+}
+/* CONTENEDOR DE BLOQUE DEL TEXTO BLOQUE UNO GENERAL */
+.totalseccion .Main-content .bloqueOCTAVO .textBloqueOCTAVO {
+    display: flex;
+    box-sizing: border-box;
+    width: auto;
+    height: auto;
+    background: #034153;
+    flex-direction:column;
+    justify-content:center;   
+}
+
+.totalseccion .Main-content .bloqueOCTAVO .textBloqueOCTAVO .ENCABEZADO-TEXTO8 {
+    display: flex;
+    box-sizing: border-box;
+    color: #f6fafa;
+    font: 150% white; 
+    background-color: #034153;
+    justify-content: center;
+
+}
+
+.totalseccion .Main-content .bloqueOCTAVO .textBloqueOCTAVO .TextOCTAVOCuerpo {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 2.25rem;
+    color: #f6fafa;
+    font-family: Arial, sans-serif;
+    background-color: #034153;
+    justify-content:center;
+    display:grid;
+    grid-template-rows: auto auto;
+    align-items:
+}
+
+
+/*** boton de mas informacion EN EL BLOQUE 4 */
+
+.Button-conoce {
+    position: relative;
+    display:inline-flexbox; /* Permite ajustar dimensiones */
+    padding: 2px 13px; /* Espaciado interno */
+    font-size: 35px ; /* Tamaño de la fuente */
+    width: 50%;
+    height: 100%;
+    justify-content: space-evenly;
+    color: white; /* Color del texto */
+    background-color:  #034153; /* Color de fondo */
+    border: white solid 3px; /* Sin borde */
+    border-radius: 11px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    text-align: center; /* Centrar texto */
+    transition: background-color 0.4s ease; /* Efecto al pasar el ratón */
+}
+
+
+/************************************************************/
+/****   TARJETAS PUBLICTARIAS DE ABAJO                     **/
+/************************************************************/
+
+
+.totalseccion .Main-content .TarjetasMAIN {
+    /*margin-top: 20px; */
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
+    gap: 85px; /* Espacio entre columnas */
+    /*border-bottom: 5px whitesmoke solid; */
+    background-color: #61ac98;
+
+}
+
+.totalseccion .Main-content .TarjetasMAIN .TargetUNOPublic {
+  
+    background: #492b17
+}
+
+
+.totalseccion .Main-content .TarjetasMAIN .TargetUNOPublic img {
+    width: 100%;
+    background: #492b17;
+}
+/*------------------------------------------*/
+/*   TARJETA 1 ES LA TARJETA CAFE DEL TEXTO */
+/*------------------------------------------*/
+
+.totalseccion .Main-content .TarjetasMAIN .TargetUNOPublic  .TextTarget1 {
+    display: flex-box;
+    box-sizing: border-box;
+    flex-direction: column;   
+    text-align: center;
+    font-size: 2.25rem;
+    color: #f6fafa;
+    font-family: Arial, sans-serif;
+    padding: 0% 32% 10% 32% ;
+    background:  #492b17;
+}
+
+/*** boton de AQUI N LA TARJETA CAFE */
+
+.button-boletines {
+    color: white; /* Color del texto */
+    background-color:   #492b17; /* Color de fondo */
+    border: white solid 3px; /* Sin borde */
+    border-radius: 11px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    text-align: center; /* Centrar texto */
+    transition: background-color 0.4s ease; /* Efecto al pasar el ratón */
+}
+
+
+.totalseccion .Main-content .TarjetasMAIN .TargetDOSPublic {
+     width: auto;
+     background: #034153;
+     
+}
+
+
+/* TARJETA 2 DE PUBLICIDAD  */
+.totalseccion .Main-content .TarjetasMAIN .TargetDOSPublic img {
+    width:  100%;
+    background-color: #034153;
+}
+
+.totalseccion .Main-content .TarjetasMAIN .TargetDOSPublic  .TextTarget2 {
+    display: flex-box;
+    box-sizing: border-box;
+    flex-direction: column;   
+    text-align: center;
+    font-size: 2.25rem;
+    color: #f6fafa;
+    font-family: Arial, sans-serif;
+    padding: 0% 32% 10% 32% ;
+    background: #034153;
+}
+
+/*** boton de AQUI N LA TARJETA CAFE */
+
+.button-terminos {
+    position: relative;
+    display:inline-flexbox; /* Permite ajustar dimensiones */
+    padding: 2px 13px; /* Espaciado interno */
+    font-size: 35px ; /* Tamaño de la fuente */
+    width: 50%;
+    height: 100%;
+    justify-content: space-evenly;
+    color: white; /* Color del texto */
+    background-color:  #034153; /* Color de fondo */
+    border: white solid 3px; /* Sin borde */
+    border-radius: 11px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    text-align: center; /* Centrar texto */
+    transition: background-color 0.4s; /* Efecto al pasar el ratón */
+}
+
+.Footer {
+    width: 100vw; /* Ancho completo de la ventana */
+    height: 700vw;
+    position: absolute; /* Cambia según tus necesidades */
+
+    /*left: 0%; /* Mover el footer al centro */
+   /*margin-left: 0vw; /* Mover el margen izquierdo para que quede alineado */
+   /* margin-right: -34.60vw; /* Mover el margen derecho para que quede alineado */
+    background-color: #7692b8; /* Color de fondo */
+}
+
+.Footer .Footer-Cont1 .SobreNosotros-links {
+    display:inline-block;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align:center;
+    font-size: 1.68rem;
+    color: #070707;
+    /*font-family: sans-serif;*/
+    width: 600px;
+    border-left: 120px solid black;
+    margin-bottom: 150px solid red;
+    /*margin-left: 50px;
+    /*padding: 0% 32% 10% 32% ;*/
+    background: rgb(96, 141, 23);
+
+}
+/*-----------------------------------------------------------------------**/
+/*---- dentro de el footer vamos a configurar los detalles d los enlaces **/
+/*-----------------------------------------------------------------------**/
+
+/* encabezado h4 **/
+h4 {
+    font-size: 1.2em
+   
+}
+
+/***** todos los ul */
+
+ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    
+}
+/**** quitar el subrallado en la lista ordenada ****/
+
+ul li a {
+    text-decoration: none;
+}
+
+
+.Footer .Footer-Cont1 .Contenedor-AtCliente {
+    position:absolute;
+    display:inline-block;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align:center;
+    font-size: 1.68rem;
+    color: #070707;
+    font-family: Arial, sans-serif;
+    width: 600px;
+    border-left: 10px solid black;
+    /*margin-left: 50px;
+    /*padding: 0% 32% 10% 32% ;*/
+    background: rgb(23, 141, 68);
+
+}
+
+.Footer .Footer-Cont2 .Footer-RSocial-Links {
+   width: 100vw; /* Ancho completo de la ventana */
+   position: relative; /* Cambia según tus necesidades */
+   left: 20%; /* Mover el footer al centro */
+   margin-left: 50vw; /* Mover el margen izquierdo para que quede alineado */
+   margin-right: -100vw; /* Mover el margen derecho para que quede alineado */
+   background-color: #7692b8; /* Color de fondo */
+}
+
+
+.Footer {
+    width: 69.44vw; /* Ancho completo de la ventana */
+    height: auto;
+    position: absolute; /* Cambia según tus necesidades */
+
+    /*left: 0%; /* Mover el footer al centro */
+   /*margin-left: 0vw; /* Mover el margen izquierdo para que quede alineado */
+   /* margin-right: -34.60vw; /* Mover el margen derecho para que quede alineado */
+    background-color: #7692b8; /* Color de fondo */
+}
